@@ -1,0 +1,6 @@
+framework module Pods_HoroscopeApp {
+  umbrella header "Pods-HoroscopeApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

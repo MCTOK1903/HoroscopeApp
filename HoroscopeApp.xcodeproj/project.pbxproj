@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00F246032549BA8F00A4462E /* InputPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F246022549BA8F00A4462E /* InputPageController.swift */; };
+		00F2460C2549BED000A4462E /* AstroInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2460B2549BED000A4462E /* AstroInputModel.swift */; };
+		00F246112549C01200A4462E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F246102549C01200A4462E /* NetworkService.swift */; };
+		00F246152549C1A400A4462E /* AstroDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F246142549C1A400A4462E /* AstroDetailModel.swift */; };
+		00FB90FD2549B136002EDF0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FB90FC2549B136002EDF0F /* AppDelegate.swift */; };
+		00FB90FF2549B136002EDF0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FB90FE2549B136002EDF0F /* SceneDelegate.swift */; };
+		00FB91062549B139002EDF0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FB91052549B139002EDF0F /* Assets.xcassets */; };
+		00FB91092549B139002EDF0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FB91072549B139002EDF0F /* LaunchScreen.storyboard */; };
+		ABEACD89F7673F798A453A23 /* Pods_HoroscopeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B4A776F9C2DBC79F4490E7 /* Pods_HoroscopeApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00F246022549BA8F00A4462E /* InputPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPageController.swift; sourceTree = "<group>"; };
+		00F2460B2549BED000A4462E /* AstroInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroInputModel.swift; sourceTree = "<group>"; };
+		00F246102549C01200A4462E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		00F246142549C1A400A4462E /* AstroDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroDetailModel.swift; sourceTree = "<group>"; };
+		00FB90F92549B136002EDF0F /* HoroscopeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoroscopeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00FB90FC2549B136002EDF0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00FB90FE2549B136002EDF0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		00FB91052549B139002EDF0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00FB91082549B139002EDF0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00FB910A2549B139002EDF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F117C2AA6DE9A711C8A6979 /* Pods-HoroscopeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoroscopeApp.release.xcconfig"; path = "Target Support Files/Pods-HoroscopeApp/Pods-HoroscopeApp.release.xcconfig"; sourceTree = "<group>"; };
+		8A7A94F2D4754CC7FCE3D392 /* Pods-HoroscopeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoroscopeApp.debug.xcconfig"; path = "Target Support Files/Pods-HoroscopeApp/Pods-HoroscopeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E2B4A776F9C2DBC79F4490E7 /* Pods_HoroscopeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoroscopeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00FB90F62549B136002EDF0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABEACD89F7673F798A453A23 /* Pods_HoroscopeApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00F246052549BAED00A4462E /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				00FB910A2549B139002EDF0F /* Info.plist */,
+				00FB90FC2549B136002EDF0F /* AppDelegate.swift */,
+				00FB90FE2549B136002EDF0F /* SceneDelegate.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		00F246072549BB3A00A4462E /* Scrrens */ = {
+			isa = PBXGroup;
+			children = (
+				00F246082549BB4100A4462E /* InputPage */,
+			);
+			path = Scrrens;
+			sourceTree = "<group>";
+		};
+		00F246082549BB4100A4462E /* InputPage */ = {
+			isa = PBXGroup;
+			children = (
+				00F246022549BA8F00A4462E /* InputPageController.swift */,
+			);
+			path = InputPage;
+			sourceTree = "<group>";
+		};
+		00F2460A2549BE3400A4462E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00F2460B2549BED000A4462E /* AstroInputModel.swift */,
+				00F246142549C1A400A4462E /* AstroDetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00F2460F2549BFFB00A4462E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				00F246102549C01200A4462E /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		00FB90F02549B136002EDF0F = {
+			isa = PBXGroup;
+			children = (
+				00FB90FB2549B136002EDF0F /* HoroscopeApp */,
+				00FB90FA2549B136002EDF0F /* Products */,
+				6604BFB82F68F7D3B4454EFF /* Pods */,
+				CB36D5CC1D4AB9D32FC04EC7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00FB90FA2549B136002EDF0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00FB90F92549B136002EDF0F /* HoroscopeApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00FB90FB2549B136002EDF0F /* HoroscopeApp */ = {
+			isa = PBXGroup;
+			children = (
+				00F2460F2549BFFB00A4462E /* Services */,
+				00F2460A2549BE3400A4462E /* Model */,
+				00F246072549BB3A00A4462E /* Scrrens */,
+				00F246052549BAED00A4462E /* Supports */,
+				00FB91052549B139002EDF0F /* Assets.xcassets */,
+				00FB91072549B139002EDF0F /* LaunchScreen.storyboard */,
+			);
+			path = HoroscopeApp;
+			sourceTree = "<group>";
+		};
+		6604BFB82F68F7D3B4454EFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A7A94F2D4754CC7FCE3D392 /* Pods-HoroscopeApp.debug.xcconfig */,
+				2F117C2AA6DE9A711C8A6979 /* Pods-HoroscopeApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CB36D5CC1D4AB9D32FC04EC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2B4A776F9C2DBC79F4490E7 /* Pods_HoroscopeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00FB90F82549B136002EDF0F /* HoroscopeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00FB910D2549B139002EDF0F /* Build configuration list for PBXNativeTarget "HoroscopeApp" */;
+			buildPhases = (
+				82972489EFE76728B3BEAA9B /* [CP] Check Pods Manifest.lock */,
+				00FB90F52549B136002EDF0F /* Sources */,
+				00FB90F62549B136002EDF0F /* Frameworks */,
+				00FB90F72549B136002EDF0F /* Resources */,
+				624A4A5D65CF79742822ABBA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HoroscopeApp;
+			productName = HoroscopeApp;
+			productReference = 00FB90F92549B136002EDF0F /* HoroscopeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00FB90F12549B136002EDF0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					00FB90F82549B136002EDF0F = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 00FB90F42549B136002EDF0F /* Build configuration list for PBXProject "HoroscopeApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00FB90F02549B136002EDF0F;
+			productRefGroup = 00FB90FA2549B136002EDF0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00FB90F82549B136002EDF0F /* HoroscopeApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00FB90F72549B136002EDF0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FB91092549B139002EDF0F /* LaunchScreen.storyboard in Resources */,
+				00FB91062549B139002EDF0F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		624A4A5D65CF79742822ABBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HoroscopeApp/Pods-HoroscopeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HoroscopeApp/Pods-HoroscopeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HoroscopeApp/Pods-HoroscopeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82972489EFE76728B3BEAA9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HoroscopeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00FB90F52549B136002EDF0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00F246152549C1A400A4462E /* AstroDetailModel.swift in Sources */,
+				00F246112549C01200A4462E /* NetworkService.swift in Sources */,
+				00FB90FD2549B136002EDF0F /* AppDelegate.swift in Sources */,
+				00FB90FF2549B136002EDF0F /* SceneDelegate.swift in Sources */,
+				00F2460C2549BED000A4462E /* AstroInputModel.swift in Sources */,
+				00F246032549BA8F00A4462E /* InputPageController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00FB91072549B139002EDF0F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00FB91082549B139002EDF0F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00FB910B2549B139002EDF0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00FB910C2549B139002EDF0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00FB910E2549B139002EDF0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A7A94F2D4754CC7FCE3D392 /* Pods-HoroscopeApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4T62J4499;
+				INFOPLIST_FILE = HoroscopeApp/Supports/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mct.HoroscopeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		00FB910F2549B139002EDF0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F117C2AA6DE9A711C8A6979 /* Pods-HoroscopeApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4T62J4499;
+				INFOPLIST_FILE = HoroscopeApp/Supports/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mct.HoroscopeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00FB90F42549B136002EDF0F /* Build configuration list for PBXProject "HoroscopeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00FB910B2549B139002EDF0F /* Debug */,
+				00FB910C2549B139002EDF0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00FB910D2549B139002EDF0F /* Build configuration list for PBXNativeTarget "HoroscopeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00FB910E2549B139002EDF0F /* Debug */,
+				00FB910F2549B139002EDF0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00FB90F12549B136002EDF0F /* Project object */;
+}
