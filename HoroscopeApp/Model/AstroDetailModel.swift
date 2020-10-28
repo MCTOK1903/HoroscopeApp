@@ -8,7 +8,6 @@
 import Foundation
 
 struct AstroDetailModel:Codable {
-    
     let ascendant: String
     let ascendantLord: String
     let varna: String
@@ -50,7 +49,6 @@ struct AstroDetailModel:Codable {
         case nameAlphabet = "name_alphabet"
         case paya = "paya"
     }
-    
 }
 
 

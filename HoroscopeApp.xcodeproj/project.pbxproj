@@ -11,6 +11,8 @@
 		00F2460C2549BED000A4462E /* AstroInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2460B2549BED000A4462E /* AstroInputModel.swift */; };
 		00F246112549C01200A4462E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F246102549C01200A4462E /* NetworkService.swift */; };
 		00F246152549C1A400A4462E /* AstroDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F246142549C1A400A4462E /* AstroDetailModel.swift */; };
+		00F2461B2549DAA200A4462E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2461A2549DAA200A4462E /* Constant.swift */; };
+		00F2461E2549DACB00A4462E /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2461D2549DACB00A4462E /* NetworkConstant.swift */; };
 		00FB90FD2549B136002EDF0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FB90FC2549B136002EDF0F /* AppDelegate.swift */; };
 		00FB90FF2549B136002EDF0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FB90FE2549B136002EDF0F /* SceneDelegate.swift */; };
 		00FB91062549B139002EDF0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FB91052549B139002EDF0F /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 		00F2460B2549BED000A4462E /* AstroInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroInputModel.swift; sourceTree = "<group>"; };
 		00F246102549C01200A4462E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		00F246142549C1A400A4462E /* AstroDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroDetailModel.swift; sourceTree = "<group>"; };
+		00F2461A2549DAA200A4462E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		00F2461D2549DACB00A4462E /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		00FB90F92549B136002EDF0F /* HoroscopeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoroscopeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FB90FC2549B136002EDF0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00FB90FE2549B136002EDF0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +56,7 @@
 				00FB910A2549B139002EDF0F /* Info.plist */,
 				00FB90FC2549B136002EDF0F /* AppDelegate.swift */,
 				00FB90FE2549B136002EDF0F /* SceneDelegate.swift */,
+				00FB91072549B139002EDF0F /* LaunchScreen.storyboard */,
 			);
 			path = Supports;
 			sourceTree = "<group>";
@@ -89,6 +94,39 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		00F246172549D68500A4462E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				00F246182549DA6700A4462E /* Constants */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		00F246182549DA6700A4462E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				00F246192549DA7500A4462E /* NetworkConstants */,
+				00F2461A2549DAA200A4462E /* Constant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		00F246192549DA7500A4462E /* NetworkConstants */ = {
+			isa = PBXGroup;
+			children = (
+				00F2461D2549DACB00A4462E /* NetworkConstant.swift */,
+			);
+			path = NetworkConstants;
+			sourceTree = "<group>";
+		};
+		00F246202549DC6F00A4462E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00FB91052549B139002EDF0F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		00FB90F02549B136002EDF0F = {
 			isa = PBXGroup;
 			children = (
@@ -110,12 +148,12 @@
 		00FB90FB2549B136002EDF0F /* HoroscopeApp */ = {
 			isa = PBXGroup;
 			children = (
+				00F246202549DC6F00A4462E /* Resources */,
+				00F246172549D68500A4462E /* Utilities */,
 				00F2460F2549BFFB00A4462E /* Services */,
 				00F2460A2549BE3400A4462E /* Model */,
 				00F246072549BB3A00A4462E /* Scrrens */,
 				00F246052549BAED00A4462E /* Supports */,
-				00FB91052549B139002EDF0F /* Assets.xcassets */,
-				00FB91072549B139002EDF0F /* LaunchScreen.storyboard */,
 			);
 			path = HoroscopeApp;
 			sourceTree = "<group>";
@@ -250,9 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F2461B2549DAA200A4462E /* Constant.swift in Sources */,
 				00F246152549C1A400A4462E /* AstroDetailModel.swift in Sources */,
 				00F246112549C01200A4462E /* NetworkService.swift in Sources */,
 				00FB90FD2549B136002EDF0F /* AppDelegate.swift in Sources */,
+				00F2461E2549DACB00A4462E /* NetworkConstant.swift in Sources */,
 				00FB90FF2549B136002EDF0F /* SceneDelegate.swift in Sources */,
 				00F2460C2549BED000A4462E /* AstroInputModel.swift in Sources */,
 				00F246032549BA8F00A4462E /* InputPageController.swift in Sources */,

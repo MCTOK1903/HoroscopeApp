@@ -16,7 +16,7 @@ class NetworkService {
     public static let shared: NetworkService = NetworkService()
     
     private let header: HTTPHeaders = [
-        "Authorization": "Basic NjE0NjY3OmI2MWI4ZmM4MDJlNDUzMDcyYmU0NTk5OTUzNDkxYmE1",
+        "Authorization": Constant.NetworkConstant.AuthKey,
         "Content-Type": "application/json;charset=UTF-8"
     ]
 }
