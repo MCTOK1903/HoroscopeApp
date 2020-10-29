@@ -11,7 +11,6 @@
 		00041875254A81A3007D0FEC /* DetailViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00041874254A81A3007D0FEC /* DetailViewModelType.swift */; };
 		00041878254A821D007D0FEC /* DetaiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00041877254A821D007D0FEC /* DetaiViewModel.swift */; };
 		00F246032549BA8F00A4462E /* InputPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F246022549BA8F00A4462E /* InputPageController.swift */; };
-		00F2460C2549BED000A4462E /* AstroInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2460B2549BED000A4462E /* AstroInputModel.swift */; };
 		00F246112549C01200A4462E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F246102549C01200A4462E /* NetworkService.swift */; };
 		00F246152549C1A400A4462E /* AstroDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F246142549C1A400A4462E /* AstroDetailModel.swift */; };
 		00F2461B2549DAA200A4462E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2461A2549DAA200A4462E /* Constant.swift */; };
@@ -28,7 +27,6 @@
 		00041874254A81A3007D0FEC /* DetailViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelType.swift; sourceTree = "<group>"; };
 		00041877254A821D007D0FEC /* DetaiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaiViewModel.swift; sourceTree = "<group>"; };
 		00F246022549BA8F00A4462E /* InputPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPageController.swift; sourceTree = "<group>"; };
-		00F2460B2549BED000A4462E /* AstroInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroInputModel.swift; sourceTree = "<group>"; };
 		00F246102549C01200A4462E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		00F246142549C1A400A4462E /* AstroDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroDetailModel.swift; sourceTree = "<group>"; };
 		00F2461A2549DAA200A4462E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 		00F2460A2549BE3400A4462E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				00F2460B2549BED000A4462E /* AstroInputModel.swift */,
 				00F246142549C1A400A4462E /* AstroDetailModel.swift */,
 			);
 			path = Model;
@@ -313,7 +310,6 @@
 				00FB90FD2549B136002EDF0F /* AppDelegate.swift in Sources */,
 				00F2461E2549DACB00A4462E /* NetworkConstant.swift in Sources */,
 				00FB90FF2549B136002EDF0F /* SceneDelegate.swift in Sources */,
-				00F2460C2549BED000A4462E /* AstroInputModel.swift in Sources */,
 				00041871254A7F5E007D0FEC /* DetailController.swift in Sources */,
 				00F246032549BA8F00A4462E /* InputPageController.swift in Sources */,
 			);

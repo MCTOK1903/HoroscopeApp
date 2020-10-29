@@ -11,18 +11,8 @@ class InputPageController: UIViewController{
     
 
     // MARK: Properties
-
-    var day: String? = nil
-    var month: String? = nil
-    var year: String? = nil
-    var hour: String? = nil
-    var min: String? = nil
-    var lat: String? = nil
-    var lon: String? = nil
-    var tzone: String? = nil
     
     var param: [String:Any]? = nil
-        
     
     // MARK: View
     
@@ -255,9 +245,7 @@ class InputPageController: UIViewController{
         sendButton.addTarget(self, action: #selector(sendButtonTaouched), for: .touchUpInside)
         
         setUpUI()
-
     }
-    
     
     // MARK: Func
     
@@ -291,6 +279,7 @@ class InputPageController: UIViewController{
     }
     
     @objc func sendButtonTaouched(_ sender: UIButton){
+        
         valideFileds()
         
         self.navigationController?.pushViewController(DetailController(param: param!), animated: true)
@@ -298,26 +287,22 @@ class InputPageController: UIViewController{
     }
     
     func valideFileds(){
-        guard dayTextField.text != nil, monthTextField.text != nil,
-              yearTextField.text != nil, hourTextField.text != nil,
-              minTextField.text != nil, minTextField.text != nil,
-              latTextField.text != nil, lonTextField.text != nil,
-              timeZoneTextField.text != nil else {
+        guard let day = dayTextField.text, let month = monthTextField.text,
+              let year = yearTextField.text, let hour = hourTextField.text,
+              let min = minTextField.text, let lat = latTextField.text,
+              let lon = lonTextField.text, let timeZone = timeZoneTextField.text else {
             return
         }
         
         param = [
-           "day" : dayTextField.text!,
-           "month": monthTextField.text!,
-           "year": yearTextField.text!,
-           "hour": hourTextField.text!,
-           "min": minTextField.text!,
-           "lat": latTextField.text!,
-           "lon": lonTextField.text!,
-           "tzone": timeZoneTextField.text!
+           "day" : day,
+           "month": month,
+           "year": year,
+           "hour": hour,
+           "min": min,
+           "lat": lat,
+           "lon": lon,
+           "tzone": timeZone
        ]
-        
     }
-    
-
 }
